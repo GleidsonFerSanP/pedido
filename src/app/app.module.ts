@@ -5,13 +5,17 @@ import { MyCustomAngularMaterialModule } from './my-custom-angular-material/my-c
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    MainPageComponent
   ],
   imports: [
+    NgbModule.forRoot (),
     BrowserModule,
     BrowserAnimationsModule,
     MyCustomAngularMaterialModule

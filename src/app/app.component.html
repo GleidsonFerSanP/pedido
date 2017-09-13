@@ -1,12 +1,11 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand"><img src="assets/img/logo.png" class="logo"></a>
-            <span class="navbar-brand">Pedidos</span>
-        </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
+            <li>
+                <button type="button" md-button class="menu" (click)="sidenav.open()">
+                    <img src="assets/img/menu.svg">
+                </button>
+            </li>
             <li dropdown>
                 <a dropdownToggle class="dropdown-toggle" role="button">Dropdown <span class="caret"></span></a>
                 <ul *dropdownMenu class="dropdown-menu">
@@ -23,8 +22,17 @@
     </div>
 </nav>
 
-<div class="container">
+<md-sidenav-container class="sidenav-container">
+    <md-sidenav #sidenav class="sidenav-menu">
+        Jolly good!
+    </md-sidenav>
 
-    <app-pedido-list></app-pedido-list>
 
-</div>
+    <md-tab-group>
+        <md-tab label="Pedidos">
+            <app-pedido-list></app-pedido-list>
+        </md-tab>
+        <md-tab label="Produtos">Content 2</md-tab>
+    </md-tab-group>
+
+</md-sidenav-container>

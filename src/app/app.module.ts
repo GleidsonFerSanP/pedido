@@ -1,26 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MyCustomAngularMaterialModule } from './my-custom-angular-material/my-custom-angular-material.module';
-import 'hammerjs';
+
+import { AppBoostrapModule } from './app-boostrap/app-boostrap.module';
 import { AppComponent } from './app.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModuleModule } from './material-module/material-module.module';
+import 'hammerjs';
+import { PedidosModule } from './pedidos/pedidos.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginPageComponent,
-    MainPageComponent
-  ],
-  imports: [
-    NgbModule.forRoot (),
-    BrowserModule,
-    BrowserAnimationsModule,
-    MyCustomAngularMaterialModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule,BrowserAnimationsModule, AppBoostrapModule, MaterialModuleModule, PedidosModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

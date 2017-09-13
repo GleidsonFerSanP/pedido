@@ -102,4 +102,4 @@ import {
     MdTooltipModule],
   declarations: []
 })
-export class MyCustomAngularMaterialModule { }
+export class MaterialModuleModule { }

@@ -5,12 +5,14 @@ import { AppBoostrapModule } from './app-boostrap/app-boostrap.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModuleModule } from './material-module/material-module.module';
+
+import { PedidoModule } from './pedido/pedido.module';
+
 import 'hammerjs';
-import { PedidosModule } from './pedidos/pedidos.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule,BrowserAnimationsModule, AppBoostrapModule, MaterialModuleModule, PedidosModule],
+  imports: [BrowserModule,BrowserAnimationsModule, AppBoostrapModule, MaterialModuleModule, PedidoModule],
   providers: [],
   bootstrap: [AppComponent]
 })

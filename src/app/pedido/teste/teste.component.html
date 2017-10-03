@@ -1,0 +1,21 @@
+<div class="content">
+    <div class="row">
+        <div class="col-sm-8">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">IdOrgao</label>
+                    <input type="number" [(ngModel)]="processoRequest.IdOrgao" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="IdOrgao" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Número Processo</label>
+                    <input type="number" [(ngModel)]="processoRequest.Numero" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Número" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Ano</label>
+                    <input type="number" [(ngModel)]="processoRequest.Ano" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Número" [ngModelOptions]="{standalone: true}">
+                </div>
+                <button type="submit" (click)="buscarProcesso()" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,11 @@
 export class Produto{
+  
+    private _id: any;
     private _nome: string;
     private _descricao: string;
     private _preco: number;
+  
+  
 
 	public get nome(): string {
 		return this._nome;

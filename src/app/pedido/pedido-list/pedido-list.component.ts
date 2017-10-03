@@ -1,3 +1,4 @@
+import { ClienteBuilder } from '../../../model/ClienteBuilder';
 import { Component, OnInit } from '@angular/core';
 import { Pedido } from '../../../model/Pedido';
 import { PedidoBuilder } from '../../../model/PedidoBuilder';
@@ -15,7 +16,9 @@ export class PedidoListComponent implements OnInit {
 
 this.pedidos.push(
   new PedidoBuilder()
-  .cliente(new ClienteBuilder())
+  .cliente(
+    new ClienteBuilder()
+    .build())
 .build()
 )
 

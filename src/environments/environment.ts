@@ -4,5 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  origin: `https://centi-gfsp/centi/`,
+  path:`/wcf/service/erpservice.svc/rest`
 };

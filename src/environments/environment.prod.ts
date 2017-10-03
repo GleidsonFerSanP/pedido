@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  origin: `https://centi-gfsp/centi/`,
+  path:`/wcf/service/erpservice.svc/rest`
 };
